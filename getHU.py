@@ -208,3 +208,5 @@ def get_HU_txt(RS_filepath, ROI_Name, CT_folderpath, output_folderpath, patient_
     f.write("Patient's Birth Year: \n" + ct.PatientsBirthDate[0:3] + "\n")
     f.write("Voxel Diameter (x, y, z): \n"  + ", ".join(str(x) for x in ct.PixelSpacing) + ", " + str(ct.SliceThickness) + "\n")
     f.close()
+
+get_HU_txt('HNSCC/HNSCC/HNSCC-01-0209/05-20-2003-RT SIMULATION-60880/1-56944/000000.dcm', 'brainstem', 'HNSCC/HNSCC/HNSCC-01-0209/05-20-2003-RT SIMULATION-60880/4-29512', 'HU', '001')
